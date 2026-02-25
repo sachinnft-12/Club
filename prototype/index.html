@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClubScope | Discover Clubs, Coaches, Tournaments</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">ClubScope</div>
+      <nav>
+        <a href="#clubs">Clubs</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#tournaments">Tournaments</a>
+        <a href="#resources">Resources</a>
+        <a href="#news">News</a>
+      </nav>
+      <button class="btn btn-primary">Register</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <p class="tag">Fast • Mobile-first • Modern</p>
+        <h1>India’s modern hub for clubs, coaches, players & tournaments.</h1>
+        <p>Search clubs by name or location, register as player/coach, publish tournaments, and build credibility with reviews, media galleries, and verified profiles.</p>
+        <div class="actions">
+          <button class="btn btn-primary">Explore Clubs</button>
+          <button class="btn btn-ghost">List Your Club</button>
+        </div>
+      </div>
+      <div class="card statcard">
+        <h3>Find your next game</h3>
+        <form class="search-form">
+          <label>Location<input placeholder="e.g., Bengaluru"></label>
+          <label>Club Name<input placeholder="e.g., Smash Arena"></label>
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="clubs" class="section container">
+    <h2>Club profile structure</h2>
+    <div class="cards">
+      <article class="card"><h3>Overview</h3><p>Username slug strategy: city + brand + short code (e.g. /clubs/smash-arena-blr-a3f9) to avoid duplicate names.</p></article>
+      <article class="card"><h3>Timings & Location</h3><p>Business hours, maps, contact, and amenities. Optimized for fast mobile loading.</p></article>
+      <article class="card"><h3>Gallery & Reviews</h3><p>Images/video highlights, social proof, and moderation-ready reviews.</p></article>
+    </div>
+  </section>
+
+  <section id="coaches" class="section alt">
+    <div class="container">
+      <h2>Coaches & Academies</h2>
+      <p>Same profile architecture as clubs: overview, schedule, gallery, location, reviews, achievements, and booking/contact CTA.</p>
+    </div>
+  </section>
+
+  <section id="tournaments" class="section container">
+    <h2>Tournaments + Hall of Fame</h2>
+    <div class="cards">
+      <article class="card"><h3>Open Tournaments</h3><p>Date/time, poster image, external live links, and registration details tied to hosting club.</p></article>
+      <article class="card"><h3>Winner Publishing</h3><p>Post event winners and brackets to build ranking history.</p></article>
+      <article class="card"><h3>Hall of Fame</h3><p>Top players, achievements, and dedicated section for Indian champions.</p></article>
+    </div>
+  </section>
+
+  <section id="resources" class="section alt">
+    <div class="container">
+      <h2>Resources & Monetization</h2>
+      <ul>
+        <li>YouTube tutorial collections</li>
+        <li>External links for accessories and gear</li>
+        <li>Sponsored banner management with free/paid subscription tiers</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="news" class="section container">
+    <h2>News & Events</h2>
+    <p>World championship results, local openings, and upcoming events. Includes optional forum/threads in phase 2.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="container small">About • Contact • Terms • Privacy • © ClubScope</div>
+  </footer>
+</body>
+</html>
