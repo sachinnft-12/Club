@@ -46,3 +46,19 @@ Open `http://127.0.0.1:8000`.
 - URL: `/admin`
 - Middleware: `admin` role check (`EnsureAdmin`)
 - Seeded admin user: `admin@clubscope.test` / `password`
+
+
+## Fix for `Table 'clubscope.cache' doesn't exist` and `View path not found`
+If you see those errors, use these steps:
+
+```bash
+cp .env.example .env
+php artisan config:clear
+php artisan cache:clear
+php artisan migrate
+```
+
+Notes:
+- This repo now defaults to `CACHE_STORE=file` and `SESSION_DRIVER=file`, so Laravel will not require a DB `cache` table for normal development.
+- If you intentionally want database cache, keep `CACHE_STORE=database` and run migrations (includes `cache` and `cache_locks` tables).
+- `VIEW_COMPILED_PATH` is configured to `storage/framework/views`; ensure the `storage/framework/views` directory exists and is writable.
