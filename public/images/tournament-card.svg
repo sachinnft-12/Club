@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 280'>
+<rect width='500' height='280' fill='#111827'/>
+<rect x='35' y='35' width='430' height='210' rx='20' fill='#f59e0b'/>
+<text x='60' y='120' font-size='38' font-family='Arial' fill='#111827'>Open Tournament</text>
+<text x='60' y='170' font-size='22' font-family='Arial' fill='#1f2937'>Register Now</text>
+</svg>

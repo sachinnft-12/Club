@@ -11,16 +11,21 @@
     <div class="container nav">
         <a class="logo" href="{{ route('home') }}">ClubScope</a>
         <nav>
-            <a href="{{ route('clubs.index') }}">Clubs</a>
-            <a href="{{ route('coaches.index') }}">Coaches</a>
-            <a href="{{ route('tournaments.index') }}">Tournaments</a>
-            <a href="{{ route('resources') }}">Resources</a>
-            <a href="{{ route('news') }}">News</a>
-            <a href="{{ route('admin.dashboard') }}">Admin</a>
+            <a class="nav-link" href="{{ route('clubs.index') }}">Clubs</a>
+            <a class="nav-link" href="{{ route('coaches.index') }}">Coaches</a>
+            <a class="nav-link" href="{{ route('tournaments.index') }}">Tournaments</a>
+            <a class="nav-link" href="{{ route('resources') }}">Resources</a>
+            <a class="nav-link" href="{{ route('news') }}">News</a>
+            <a class="nav-link" href="{{ route('admin.dashboard') }}">Admin</a>
         </nav>
     </div>
 </header>
-<main class="container">@yield('content')</main>
+<main class="container">
+    @if(session('status'))
+        <div class="alert">{{ session('status') }}</div>
+    @endif
+    @yield('content')
+</main>
 <footer class="footer container">
     <a href="{{ route('about') }}">About</a> •
     <a href="{{ route('contact') }}">Contact</a> •

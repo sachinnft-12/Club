@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>
+<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='#4f46e5'/><stop offset='1' stop-color='#06b6d4'/></linearGradient></defs>
+<rect width='800' height='500' fill='url(#g)'/>
+<circle cx='130' cy='120' r='70' fill='#ffffff33'/><circle cx='620' cy='400' r='120' fill='#ffffff26'/>
+<rect x='120' y='170' width='560' height='220' rx='24' fill='#ffffffdd'/>
+<text x='160' y='250' font-size='42' font-family='Arial' fill='#1f2a44'>ClubScope Arena</text>
+<text x='160' y='295' font-size='24' font-family='Arial' fill='#4b5563'>Find clubs • Coaches • Tournaments</text>
+</svg>
