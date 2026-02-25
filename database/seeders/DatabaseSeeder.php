@@ -16,6 +16,13 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        User::query()->create([
+            'name' => 'Platform Admin',
+            'email' => 'admin@clubscope.test',
+            'password' => 'password',
+            'role' => 'admin',
+        ]);
+
         $owner = User::query()->create([
             'name' => 'Club Owner',
             'email' => 'owner@clubscope.test',

@@ -16,6 +16,7 @@
             <a href="{{ route('tournaments.index') }}">Tournaments</a>
             <a href="{{ route('resources') }}">Resources</a>
             <a href="{{ route('news') }}">News</a>
+            <a href="{{ route('admin.dashboard') }}">Admin</a>
         </nav>
     </div>
 </header>

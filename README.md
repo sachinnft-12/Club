@@ -14,6 +14,7 @@ This repository now contains a full Laravel-style source code structure for your
 - User registration entry points (player / coach)
 - News & Events
 - Banner management data model
+- Full Admin Panel (`/admin`) for users, clubs, coaches, tournaments, resources, news, banners, and hall of fame
 - Static pages (About, Contact, Terms, Policy)
 
 ## Key implementation decisions
@@ -40,3 +41,8 @@ php artisan serve
 ```
 
 Open `http://127.0.0.1:8000`.
+
+## Admin panel
+- URL: `/admin`
+- Middleware: `admin` role check (`EnsureAdmin`)
+- Seeded admin user: `admin@clubscope.test` / `password`
