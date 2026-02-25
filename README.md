@@ -62,3 +62,21 @@ Notes:
 - This repo now defaults to `CACHE_STORE=file` and `SESSION_DRIVER=file`, so Laravel will not require a DB `cache` table for normal development.
 - If you intentionally want database cache, keep `CACHE_STORE=database` and run migrations (includes `cache` and `cache_locks` tables).
 - `VIEW_COMPILED_PATH` is configured to `storage/framework/views`; ensure the `storage/framework/views` directory exists and is writable.
+
+
+## Fix for `file_put_contents(...storage/framework/sessions/...): Failed to open stream`
+This means Laravel cannot find/write the session directory.
+
+Create required folders:
+
+```bash
+mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache/data bootstrap/cache
+```
+
+Then clear cached config and retry:
+
+```bash
+php artisan optimize:clear
+```
+
+On Windows/XAMPP, also make sure the `storage/` and `bootstrap/cache` folders are writable by Apache/PHP.
